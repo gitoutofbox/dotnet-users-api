@@ -149,3 +149,16 @@
 /Users/souravpaul/Development/DotNetProjects/UsersApi/obj/Debug/net9.0/UsersApi.genruntimeconfig.cache
 /Users/souravpaul/Development/DotNetProjects/UsersApi/obj/Debug/net9.0/ref/UsersApi.dll
 /Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/obj/Debug/net9.0/UsersApi.sourcelink.json
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Microsoft.AspNetCore.Mvc.Versioning.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using UsersApi.Models;
@@ -8,6 +9,7 @@ namespace UsersApi.Controllers
 {
     [Route("api/users")]
     [ApiController]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private IUsersRepository usersRepository;
@@ -19,9 +21,11 @@ namespace UsersApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetUsers () {
+        public async Task<ActionResult> GetUsers () {
+            // var full_name = User.Claims.FirstOrDefault(c => c.Type == "full_name")?.Value;
             var users = await usersRepository.GetUsers();
             return Ok(mapper.Map<IEnumerable<Models.UserDto>>(users));
+            // return Ok(full_name);
         }
 
         [HttpGet("{id}")]
