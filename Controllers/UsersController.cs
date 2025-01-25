@@ -9,7 +9,7 @@ namespace UsersApi.Controllers
 {
     [Route("api/users")]
     [ApiController]
-    [Authorize]
+    [Authorize(Policy = "MustBeFromIndia")]
     public class UsersController : ControllerBase
     {
         private IUsersRepository usersRepository;

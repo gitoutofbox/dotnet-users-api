@@ -23,11 +23,13 @@ namespace UsersApi.Controllers
             public string UserName {get; set;}
             public string FirstName {get; set;}
             public string LastName {get; set;}
-            public User(int userId, string userName, string firstName, string lastName) {
+            public string Country {get; set;}
+            public User(int userId, string userName, string firstName, string lastName, string country) {
                 UserId = userId;
                 UserName = userName;
                 FirstName = firstName;
                 LastName = lastName;
+                Country = country;
             }
 
         }
@@ -49,6 +51,7 @@ namespace UsersApi.Controllers
             var claims = new List<Claim>();
             claims.Add(new Claim("sub", user.UserId.ToString()));
             claims.Add(new Claim("full_name", user.FirstName + " "+ user.LastName));
+            claims.Add(new Claim("country", user.Country));
 
             var jwtToken =  new JwtSecurityToken(
                 _config["Authentication:Issuer"],
@@ -68,7 +71,8 @@ namespace UsersApi.Controllers
                 1,
                 "jogn_robinson",
                 "John",
-                "Robinson"
+                "Robinson",
+                "India"
             );
         }
     }

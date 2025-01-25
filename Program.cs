@@ -77,6 +77,15 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Convert.FromBase64String(builder.Configuration["Authentication:Secret"]))
     };
 });
+
+builder.Services.AddAuthorization(options => {
+    options.AddPolicy("MustBeFromIndia", policy => {
+        policy.RequireAuthenticatedUser();
+        policy.RequireClaim("country", "India");
+    });
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
