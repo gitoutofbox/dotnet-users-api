@@ -162,3 +162,12 @@
 /Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.AspNetCore.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Extensions.Hosting.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Extensions.Logging.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Formatting.Compact.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Settings.Configuration.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Sinks.Console.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
+/Users/souravpaul/Development/DotNetProjects/UsersApi/bin/Debug/net9.0/Serilog.Sinks.File.dll

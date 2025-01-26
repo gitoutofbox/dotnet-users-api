@@ -14,16 +14,19 @@ namespace UsersApi.Controllers
     {
         private IUsersRepository usersRepository;
         private IMapper mapper;
+        private readonly ILogger<UsersController> logger;
 
-        public UsersController(IUsersRepository repository, IMapper _mapper) {
+        public UsersController(IUsersRepository repository, IMapper _mapper, ILogger<UsersController> _logger) {
             usersRepository = repository ?? throw new ArgumentNullException(nameof(repository));
             mapper = _mapper ?? throw new ArgumentNullException(nameof(_mapper));
+            logger = _logger ?? throw new ArgumentNullException(nameof(_logger));
         }
 
         [HttpGet]
         public async Task<ActionResult> GetUsers () {
             // var full_name = User.Claims.FirstOrDefault(c => c.Type == "full_name")?.Value;
             var users = await usersRepository.GetUsers();
+            logger.LogInformation("Users list fetched >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
             return Ok(mapper.Map<IEnumerable<Models.UserDto>>(users));
             // return Ok(full_name);
         }
